@@ -4,7 +4,7 @@
 
 # Lazy Logo 
 
-This Statamic addon automatically generates a control panel logo image based on the `statamic.cp.custom_cms_name` config value. Handy if you just need a quick way to see which site you're editing at a glance. 
+This Statamic addon automatically generates a control panel logo image based on the application name. Useful if you need a quick way to see which site you're editing at a glance. You can also configure the text and styles, allowing you to use different values in different environments.
 
 > **Important:** This addon uses Statamic's white labeling feature, which is Pro only. Therefore this addon will only work with the Pro edition.
 
@@ -24,7 +24,7 @@ Set the `custom_logo_url` in `config/statamic/cp.php` to `/!/lazy-logo.svg`:
 
 That's it!
 
-By default the logo will be styled to match the CP text style. If you want to customise it you can publish and edit the config:
+By default the text will be styled to match the CP text style. If you want to customise it you can publish and edit the config:
 
 ```bash
 php please vendor:publish --tag=lazy-logo-config
@@ -35,6 +35,7 @@ Open `config/lazy-logo.php` and make your changes:
 ```php
 return [
 
+    'text'        => env('APP_NAME', 'Laravel'),
     'color'       => '#19292f',
     // 'gradient'    => ['#F94F57', '#12c2e9'],
     'font_family' => 'Inter UI,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue',

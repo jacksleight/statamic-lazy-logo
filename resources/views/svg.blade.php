@@ -25,6 +25,6 @@ $center = strpos(Request::server('HTTP_REFERER'), 'login') !== false;
         dominant-baseline="central"
         text-anchor="{{ $center ? 'middle' : 'start' }}"
         fill="url(#fill)">
-        {{ config('statamic.cp.custom_cms_name') }}
+        {{ config('lazy-logo.text', config('app.name')) }}
     </text>
 </svg>
