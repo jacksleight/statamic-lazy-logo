@@ -1,0 +1,22 @@
+{
+    "name": "jacksleight/lazy-logo",
+    "autoload": {
+        "psr-4": {
+            "JackSleight\\LazyLogo\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Lazy Logo",
+            "description": "A Statamic addon that automatically generates a control panel logo image."
+        },
+        "laravel": {
+            "providers": [
+                "JackSleight\\LazyLogo\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "statamic/cms": "^3.1"
+    }
+}
