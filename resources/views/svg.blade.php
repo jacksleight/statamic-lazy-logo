@@ -1,5 +1,8 @@
 @php
-$colors = config('lazy-logo.gradient', [config('lazy-logo.color', '#19292f')]);
+$colors = config('lazy-logo.color');
+if (!is_array($colors)) {
+    $colors = [$colors];
+}
 $offset = count($colors) > 1 ? 100 / (count($colors) - 1) : 0;
 $center = strpos(Request::server('HTTP_REFERER'), 'login') !== false;
 @endphp
@@ -13,9 +16,9 @@ $center = strpos(Request::server('HTTP_REFERER'), 'login') !== false;
     </defs>
     <style>
         #text {
-            font-family: {{ config('lazy-logo.font_family', 'Inter UI,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue') }};
-            font-size: {{ config('lazy-logo.font_size', '22px') }};
-            font-weight: {{ config('lazy-logo.font_weight', 'normal') }};
+            font-family: {{ config('lazy-logo.font_family') }};
+            font-size: {{ config('lazy-logo.font_size') }};
+            font-weight: {{ config('lazy-logo.font_weight') }};
         }
     </style>
     <text
@@ -25,6 +28,6 @@ $center = strpos(Request::server('HTTP_REFERER'), 'login') !== false;
         dominant-baseline="central"
         text-anchor="{{ $center ? 'middle' : 'start' }}"
         fill="url(#fill)">
-        {{ config('lazy-logo.text', config('app.name')) }}
+        {{ config('lazy-logo.text') }}
     </text>
 </svg>

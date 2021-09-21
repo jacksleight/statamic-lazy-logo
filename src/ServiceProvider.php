@@ -6,6 +6,13 @@ use Statamic\Providers\AddonServiceProvider;
 
 class ServiceProvider extends AddonServiceProvider
 {
+    public function register()
+    {
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/lazy-logo.php', 'lazy-logo',
+        );
+    }
+
     public function boot()
     {
         $this->publishes([
