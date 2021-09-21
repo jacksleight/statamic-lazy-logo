@@ -36,4 +36,4 @@ By default the text will be the `APP_NAME` environment variable, and it'll be st
 php please vendor:publish --tag=lazy-logo-config
 ```
 
-Open `config/lazy-logo.php` and make your changes.
+Then open `config/lazy-logo.php` and make your changes.
