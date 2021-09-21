@@ -4,9 +4,9 @@
 ![Packagist version](https://flat.badgen.net/packagist/v/jacksleight/lazy-logo)
 ![License](https://flat.badgen.net/github/license/jacksleight/lazy-logo)
 
-<!-- /statamic:hide -->
-
 # Lazy Logo 
+
+<!-- /statamic:hide -->
 
 This Statamic addon automatically generates a control panel logo image based on the application name. Useful if you need a quick way to see which site you're editing at a glance. You can also configure the text and styles, allowing you to use different values in different environments for example.
 
