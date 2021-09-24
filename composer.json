@@ -8,7 +8,7 @@
     "extra": {
         "statamic": {
             "name": "Lazy Logo",
-            "description": "A Statamic addon that automatically generates a control panel logo image."
+            "description": "This Statamic addon automatically generates a control panel logo image based on the application name."
         },
         "laravel": {
             "providers": [
