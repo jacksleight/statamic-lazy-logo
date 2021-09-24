@@ -28,7 +28,7 @@ Set the `custom_logo_url` in `config/statamic/cp.php` to `/!/lazy-logo.svg`:
 
 That's it!
 
-## Customisation
+## Configuration
 
 By default the text will be the `APP_NAME` environment variable, and it'll be styled to match the CP text. If you want to customise it you can publish and edit the config:
 
