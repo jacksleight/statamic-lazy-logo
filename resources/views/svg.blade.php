@@ -1,5 +1,5 @@
 @php
-$colors = config('lazy-logo.color');
+$colors = config('statamic.lazy-logo.color');
 if (!is_array($colors)) {
     $colors = [$colors];
 }
@@ -16,9 +16,9 @@ $center = strpos(Request::server('HTTP_REFERER'), 'login') !== false;
     </defs>
     <style>
         #text {
-            font-family: {{ config('lazy-logo.font_family') }};
-            font-size: {{ config('lazy-logo.font_size') }};
-            font-weight: {{ config('lazy-logo.font_weight') }};
+            font-family: {{ config('statamic.lazy-logo.font_family') }};
+            font-size: {{ config('statamic.lazy-logo.font_size') }};
+            font-weight: {{ config('statamic.lazy-logo.font_weight') }};
         }
     </style>
     <text
@@ -28,6 +28,6 @@ $center = strpos(Request::server('HTTP_REFERER'), 'login') !== false;
         dominant-baseline="central"
         text-anchor="{{ $center ? 'middle' : 'start' }}"
         fill="url(#fill)">
-        {{ config('lazy-logo.text') }}
+        {{ config('statamic.lazy-logo.text') }}
     </text>
 </svg>

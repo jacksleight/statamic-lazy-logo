@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 (2021-10-22)
+
+- [break] **Package Renamed:**  
+This package has been renamed to `jacksleight/statamic-lazy-logo`. I'm very sorry for any inconvienence this causes, but it's necessary for some future plans and to keep everything namespaced properly. It won't happen again! Update instructions:
+    1. Update `composer.json` to `"jacksleight/statamic-lazy-logo": "0.3.0",`
+    2. Move `config/lazy-logo.php` to `config/statamic/lazy-logo.php`
+    3. Run `composer update`
+
 ## 0.2.1 (2021-09-21)
 
 - [new] `font_weight` now defaults to `500`
