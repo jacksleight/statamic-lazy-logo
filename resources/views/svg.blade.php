@@ -4,7 +4,7 @@ if (!is_array($colors)) {
     $colors = [$colors];
 }
 $offset = count($colors) > 1 ? 100 / (count($colors) - 1) : 0;
-$center = strpos(Request::server('HTTP_REFERER'), 'login') !== false;
+$center = strpos(Request::server('HTTP_REFERER'), 'auth') !== false;
 @endphp
 <svg width="280" height="32" xmlns="http://www.w3.org/2000/svg">
     <defs>
