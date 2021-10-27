@@ -8,6 +8,8 @@
 
 <!-- /statamic:hide -->
 
+> **Updating from 0.2.1?** Check the [0.3.0 update instructions](https://github.com/jacksleight/statamic-lazy-logo/blob/main/CHANGELOG.md#030-2021-10-22).
+
 This Statamic addon automatically generates a control panel logo image based on the application name. Useful if you need a quick way to see which site you're editing at a glance. You can also configure the text and styles, allowing you to use different values in different environments for example.
 
 > **Important:** This addon uses Statamic's white labeling feature, which is Pro only. Therefore this addon will only work with the Pro edition.
