@@ -20,10 +20,10 @@ Install the addon using Composer:
 composer require jacksleight/statamic-lazy-logo
 ```
 
-Set the `custom_logo_url` in `config/statamic/cp.php` to `/!/lazy-logo.svg`:
+Set the `custom_logo_url` in `config/statamic/cp.php` to `/!/statamic-lazy-logo.svg`:
 
 ```php
-'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/!/lazy-logo.svg'),
+'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/!/statamic-lazy-logo.svg'),
 ```
 
 That's it!

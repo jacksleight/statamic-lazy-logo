@@ -1,7 +1,10 @@
 <?php
 
-Route::get('/!/lazy-logo.svg', function () {
+$response = function () {
     return response()
-        ->view('lazy-logo::svg')
+        ->view('statamic-lazy-logo::svg')
         ->header('Content-Type', 'image/svg+xml');
-});
+};
+
+Route::get('/!/statamic-lazy-logo.svg', $response);
+Route::get('/!/lazy-logo.svg', $response); // @deprecated
