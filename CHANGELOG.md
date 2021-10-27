@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 (2021-10-27)
+
+- [fix] Center the logo on all auth screens, not just login
+
 ## 0.3.0 (2021-10-22)
 
 - [break] **Package Renamed:**  
