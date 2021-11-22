@@ -4,7 +4,7 @@
 
 - [new] Add ability to shift the text baseline
 - [fix] Improve default styles
-- [fix] Correct the config file name
+- [fix] Correct the config filename
 
 ## 0.3.1 (2021-10-27)
 
