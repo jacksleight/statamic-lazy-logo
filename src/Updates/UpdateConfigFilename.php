@@ -1,5 +1,7 @@
 <?php
 
+namespace JackSleight\StatamicLazyLogo\Updates;
+
 use Statamic\UpdateScripts\UpdateScript;
 
 class UpdateConfigFilename extends UpdateScript

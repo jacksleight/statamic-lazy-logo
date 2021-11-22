@@ -11,6 +11,10 @@ class ServiceProvider extends AddonServiceProvider
         'cp'  => __DIR__.'/../routes/cp.php',
     ];
 
+    protected $updateScripts = [
+        \JackSleight\StatamicLazyLogo\Updates\UpdateConfigFilename::class,
+    ];
+
     public function register()
     {
         parent::register();
