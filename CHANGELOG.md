@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2 (2021-11-22)
+
+- [new] Add ability to shift the text baseline
+- [fix] Improve default styles
+- [fix] Correct the config file name
+
 ## 0.3.1 (2021-10-27)
 
 - [fix] Center the logo on all auth screens, not just login
