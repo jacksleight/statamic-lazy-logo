@@ -26,6 +26,7 @@ $center = strpos(Request::server('HTTP_REFERER'), 'auth') !== false;
         x="{{ $center ? '50%' : '0' }}"
         y="50%"
         dominant-baseline="central"
+        baseline-shift="{{ config('statamic.lazy-logo.font_shift') }}"
         text-anchor="{{ $center ? 'middle' : 'start' }}"
         fill="url(#fill)">
         {{ config('statamic.lazy-logo.text') }}
