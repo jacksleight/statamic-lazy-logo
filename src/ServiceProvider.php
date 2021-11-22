@@ -16,7 +16,7 @@ class ServiceProvider extends AddonServiceProvider
         parent::register();
 
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/statamic/lazy-logo.php', 'statamic.lazy-logo',
+            __DIR__.'/../config/statamic/lazy-logo.php', 'statamic.lazy-logo',
         );
     }
 
@@ -25,9 +25,9 @@ class ServiceProvider extends AddonServiceProvider
         parent::boot();
 
         $this->publishes([
-            __DIR__ . '/../config/statamic/lazy-logo.php' => config_path('statamic/lazy-logo.php'),
+            __DIR__.'/../config/statamic/lazy-logo.php' => config_path('statamic/lazy-logo.php'),
         ], 'statamic-lazy-logo-config');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'statamic-lazy-logo');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'statamic-lazy-logo');
     }
 }
