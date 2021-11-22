@@ -22,10 +22,10 @@ You can search for this addon in the `Tools > Addons` section of the Statamic co
 composer require jacksleight/statamic-lazy-logo
 ```
 
-Set the `custom_logo_url` in `config/statamic/cp.php` to `/cp/statamic-lazy-logo.svg`:
+Set the `custom_logo_url` in `config/statamic/cp.php` to `/cp/lazy-logo.svg`:
 
 ```php
-'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/cp/statamic-lazy-logo.svg'),
+'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/cp/lazy-logo.svg'),
 ```
 
 That's it!
