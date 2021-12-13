@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.3 (2021-12-13)
+
+- [fix] Logo route should not require authentication
+
 ## 0.3.2 (2021-11-22)
 
 - [new] Add ability to shift the text baseline
