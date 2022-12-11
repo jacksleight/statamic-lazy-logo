@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 ()
+
+- [new] Outside (login etc.) and inside pages can now have different logo styles
+- [new] Outside page background can now be customised 
+- [fix] Asset (SVG and CSS) browser caching
+- [break] The `custom_logo_url` option should now specify both logo variants (see readme)
+- [break] Deprecated routes have been removed
+
 ## 0.3.3 (2021-12-13)
 
 - [fix] Logo route should not require authentication
