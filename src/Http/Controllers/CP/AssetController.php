@@ -27,11 +27,13 @@ class AssetController extends Controller
 
     private function getParams()
     {
-        $default = array_merge(Arr::except(config('statamic.lazy_logo'), 'outside'), [
+        $config = config('statamic.lazy_logo');
+
+        $default = array_merge(Arr::except($config, 'outside'), [
             'anchor' => 'start',
         ]);
 
-        $outside = array_merge($default, config('statamic.lazy_logo.outside', []), [
+        $outside = array_merge($default, Arr::get($config, 'outside', []), [
             'anchor' => 'middle',
         ]);
 
