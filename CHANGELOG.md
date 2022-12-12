@@ -6,7 +6,7 @@
 - [new] Supports setting an outside page background colour or gradient
 - [fix] Image and style browser caching
 - [break] The `custom_logo_url` value has changed, see readme
-- [break] Deprecated routes have been removed
+- Deprecated routes have been removed
 
 ## 0.3.3 (2021-12-13)
 
