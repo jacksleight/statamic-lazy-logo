@@ -3,7 +3,7 @@
 ## 1.0.0 (2022-12-12)
 
 - [new] Supports different logo styles for outside (login etc.) and inside pages
-- [new] Supports setting an outside page background colour or gradient
+- [new] Supports setting an outside page background
 - [fix] Image and style browser caching
 - [break] The `custom_logo_url` value has changed, see readme
 - Deprecated routes have been removed
