@@ -41,7 +41,7 @@ And then opening `config/statamic/lazy_logo.php` to make your changes.
 
 ### Outside Page Background
 
-You can set the background color of the outside pages by setting the `statamic.cp.custom_css_url` config option to the Lazy Logo path:
+You can enable the Lazy Logo background by setting the `statamic.cp.custom_css_url` config option to the Lazy Logo path:
 
 ```php
 'custom_css_url' => '/cp/lazy-logo/cp.css',
