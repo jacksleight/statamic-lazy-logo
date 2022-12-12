@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.0 ()
+## 1.0.0 (2022-12-12)
 
 - [new] Supports different logo styles for outside (login etc.) and inside pages
 - [new] Supports setting an outside page background colour or gradient

@@ -8,7 +8,7 @@
 
 <!-- /statamic:hide -->
 
-This Statamic addon automatically generates a control panel logo image based on the application name. It supports custom text and styles, different styles for the outside (login etc.) and inside pages, and can also set a background color or gradient on the outside pages.
+This Statamic addon automatically generates a control panel logo image based on the application name. It supports custom text and styles, different logo styles for outside (login etc.) and inside pages, and setting an outside page background.
 
 > **Important:** This addon uses Statamic's white labeling feature, which is Pro only. Therefore this addon will only work with the Pro edition.
 
@@ -20,7 +20,7 @@ You can search for this addon in the `Tools > Addons` section of the Statamic co
 composer require jacksleight/statamic-lazy-logo
 ```
 
-Then set the `statamic.cp.custom_logo_url` config option to the Lazy Logo SVGs:
+Then set the `statamic.cp.custom_logo_url` config option to the Lazy Logo paths:
 
 ```php
 'custom_logo_url' => [
@@ -41,7 +41,7 @@ And then opening `config/statamic/lazy_logo.php` to make your changes.
 
 ### Outside Page Background
 
-You can set the background color of the outside pages by setting the `statamic.cp.custom_css_url` config option to the Lazy Logo CSS:
+You can set the background color of the outside pages by setting the `statamic.cp.custom_css_url` config option to the Lazy Logo path:
 
 ```php
 'custom_css_url' => '/cp/lazy-logo/cp.css',
@@ -50,5 +50,5 @@ You can set the background color of the outside pages by setting the `statamic.c
 And then changing the `statamic.cp.theme` config option to `lazy-logo`:
 
 ```php
-'theme' => env('STATAMIC_THEME', 'lazy-logo'),
+'theme' => 'lazy-logo',
 ```
