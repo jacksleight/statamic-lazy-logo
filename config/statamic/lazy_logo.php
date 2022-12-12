@@ -46,7 +46,7 @@ return [
     | Background
     |--------------------------------------------------------------------------
     |
-    | The outside (login pages) background color, Use an array to create a
+    | The outside (login pages) background color. Use an array to create a
     | color gradient.
     |
     */
@@ -58,7 +58,7 @@ return [
     | Outside
     |--------------------------------------------------------------------------
     |
-    | All the options above can be overidden for the outside (login etc.) pages.
+    | All of the options above can be overidden for outside (login etc.) pages.
     |
     */
 
