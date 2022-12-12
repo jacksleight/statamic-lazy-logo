@@ -7,7 +7,7 @@ use Statamic\Support\Arr;
     $background = Arr::wrap($params['outside']['background']);
     @endphp
     .outside.lazy-logo-theme {
-        background: {{ $background[0] }};
-        background: linear-gradient(45deg, {{ implode(', ', $background) }});
+        background-color: {{ $background[0] }};
+        background-image: linear-gradient(45deg, {{ implode(', ', $background) }});
     }
 @endif

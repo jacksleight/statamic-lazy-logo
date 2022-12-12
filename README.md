@@ -24,8 +24,8 @@ Then set the `statamic.cp.custom_logo_url` config option to the Lazy Logo SVGs:
 
 ```php
 'custom_logo_url' => [
-    'nav' => '/cp/lazy-logo.svg',
-    'outside' => '/cp/lazy-logo-outside.svg',
+    'nav' => '/cp/lazy-logo/nav.svg',
+    'outside' => '/cp/lazy-logo/outside.svg',
 ],
 ```
 
@@ -44,7 +44,7 @@ And then opening `config/statamic/lazy_logo.php` to make your changes.
 You can set the background color of the outside pages by setting the `statamic.cp.custom_css_url` config option to the Lazy Logo CSS:
 
 ```php
-'custom_css_url' => '/cp/lazy-logo.css',
+'custom_css_url' => '/cp/lazy-logo/cp.css',
 ```
 
 And then changing the `statamic.cp.theme` config option to `lazy-logo`:

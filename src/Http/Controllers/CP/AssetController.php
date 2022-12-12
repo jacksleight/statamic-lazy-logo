@@ -7,7 +7,7 @@ use Statamic\Support\Arr;
 
 class AssetController extends Controller
 {
-    public function svg($type = 'default')
+    public function svg($type)
     {
         return response()
             ->view('statamic-lazy-logo::svg', [
@@ -38,7 +38,7 @@ class AssetController extends Controller
         ]);
 
         return [
-            'default' => $default,
+            'nav' => $default,
             'outside' => $outside,
         ];
     }
