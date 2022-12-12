@@ -8,7 +8,7 @@
 
 <!-- /statamic:hide -->
 
-This Statamic addon automatically generates a control panel logo image based on the application name. Useful if you need a quick way to see which site you're editing at a glance. You can also configure the text and styles, allowing you to use different values in different environments for example.
+This Statamic addon automatically generates a control panel logo image based on the application name. It supports custom text and styles, different logo styles for outside (login etc.) and inside pages, and setting an outside page background.
 
 > **Important:** This addon uses Statamic's white labeling feature, which is Pro only. Therefore this addon will only work with the Pro edition.
 
@@ -20,20 +20,35 @@ You can search for this addon in the `Tools > Addons` section of the Statamic co
 composer require jacksleight/statamic-lazy-logo
 ```
 
-Set the `custom_logo_url` in `config/statamic/cp.php` to `/cp/lazy-logo.svg`:
+Then set the `statamic.cp.custom_logo_url` config option to the Lazy Logo paths:
 
 ```php
-'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/cp/lazy-logo.svg'),
+'custom_logo_url' => [
+    'nav' => '/cp/lazy-logo/nav.svg',
+    'outside' => '/cp/lazy-logo/outside.svg',
+],
 ```
-
-That's it!
 
 ## Configuration
 
-By default the text will be the `APP_NAME` environment variable, and it'll be styled to match the CP text. If you want to customise it you can publish and edit the config:
+You can customise the styles by publishing the config:
 
 ```bash
 php please vendor:publish --tag=statamic-lazy-logo-config
 ```
 
-Then open `config/statamic/lazy_logo.php` and make your changes.
+And then opening `config/statamic/lazy_logo.php` to make your changes.
+
+### Outside Page Background
+
+You can set the background color of the outside pages by setting the `statamic.cp.custom_css_url` config option to the Lazy Logo path:
+
+```php
+'custom_css_url' => '/cp/lazy-logo/cp.css',
+```
+
+And then changing the `statamic.cp.theme` config option to `lazy-logo`:
+
+```php
+'theme' => 'lazy-logo',
+```
