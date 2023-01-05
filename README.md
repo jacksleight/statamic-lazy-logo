@@ -10,7 +10,7 @@
 
 This Statamic addon automatically generates a control panel logo image based on the application name. It supports custom text and styles, different logo styles for outside (login etc.) and inside pages, and setting an outside page background.
 
-> **Note**  
+> **Note**
 > This addon uses Statamic's white labeling feature, which is Pro only. Therefore this addon will only work with the Pro edition.
 
 ## Installation
