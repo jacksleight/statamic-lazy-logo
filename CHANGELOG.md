@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 ()
+
+- [new] Statamic 4 support
+
 ## 1.0.0 (2022-12-12)
 
 - [new] Supports different logo styles for outside (login etc.) and inside pages
