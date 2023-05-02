@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.0 (02-05-2023)
+## 1.1.0 (2023-05-02)
 
 - [new] Statamic 4 support
 
