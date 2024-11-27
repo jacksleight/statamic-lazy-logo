@@ -4,6 +4,8 @@
 
 <!-- /statamic:hide -->
 
+> ⚠️ This addon is no longer maintained as Statamic now has this feature [built-in](https://github.com/statamic/cms/pull/10350).
+
 This Statamic addon automatically generates a control panel logo image based on the application name. It supports custom text and styles, different logo styles for outside (login etc.) and inside pages, and setting an outside page background.
 
 > **Note**
